@@ -1,0 +1,24 @@
+# my_sbook_data_a.txt
+# 
+# don't hesitate to add comment with #
+
+charli oleg
+12/05/1955
+#06 12 23 34 45 56 # old phone number. not applicable anymoer
+06 55 54 44 55
+2 rue des champs elysee
+Paris
+friend/pianist
+
+robert guillot
+05/12/1960
+3 rue du chemin vert
+63000 trifouilly
+friend
+
+alberto ribon
+inspecteur des impôts
+01 23 45 54 56
+administration/impot
+
+
