@@ -51,28 +51,28 @@ echo -e "\n\n\n ### Begin of the non regression test of sbook.py ###\n\n\n"
 
 
 echo "Which paragraphs contain robert in the file directory_1.txt ?"
-sbook.py -d $TMP_DIR/directory_1.txt robert
+python sbook.py -d $TMP_DIR/directory_1.txt robert
 
 echo "Which paragraphs contain robert in the file directory_1.txt and directory_2.txt ?"
-sbook.py -d $TMP_DIR/directory_1.txt -d $TMP_DIR/directory_2.txt robert
+python sbook.py -d $TMP_DIR/directory_1.txt -d $TMP_DIR/directory_2.txt robert
 
 echo "Which contain robert AND thierry ?"
-sbook.py -d $TMP_DIR/directory_1.txt -d $TMP_DIR/directory_2.txt robert thierry
+python sbook.py -d $TMP_DIR/directory_1.txt -d $TMP_DIR/directory_2.txt robert thierry
 
 echo "Which contain rob OR rol ?"
-sbook.py -d $TMP_DIR/directory_1.txt -d $TMP_DIR/directory_2.txt rob\|rol
+python sbook.py -d $TMP_DIR/directory_1.txt -d $TMP_DIR/directory_2.txt rob\|rol
 
 echo "Which contain (rob OR rol) AND thierry ?"
-sbook.py -d $TMP_DIR/directory_1.txt -d $TMP_DIR/directory_2.txt rob\|rol thierry
+python sbook.py -d $TMP_DIR/directory_1.txt -d $TMP_DIR/directory_2.txt rob\|rol thierry
 
 echo "The arguments of -g have the same meaning of the script arguments."
-sbook.py -d $TMP_DIR/directory_1.txt -d $TMP_DIR/directory_2.txt -g rob\|rol -g thierry
+python sbook.py -d $TMP_DIR/directory_1.txt -d $TMP_DIR/directory_2.txt -g rob\|rol -g thierry
 
 echo "Which contain (rob OR rol) but NOT thierry ?"
-sbook.py -d $TMP_DIR/directory_1.txt -d $TMP_DIR/directory_2.txt -g rob\|rol -v thierry
+python sbook.py -d $TMP_DIR/directory_1.txt -d $TMP_DIR/directory_2.txt -g rob\|rol -v thierry
 
 echo "Add the data file name to know where data come from."
-sbook.py -d $TMP_DIR/directory_1.txt -d $TMP_DIR/directory_2.txt -g rob\|rol -v thierry -a
+python sbook.py -d $TMP_DIR/directory_1.txt -d $TMP_DIR/directory_2.txt -g rob\|rol -v thierry -a
 
 echo "end of check_sbook.sh"
 
