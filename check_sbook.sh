@@ -65,14 +65,11 @@ python sbook.py -d $TMP_DIR/directory_1.txt -d $TMP_DIR/directory_2.txt rob\|rol
 echo "Which contain (rob OR rol) AND thierry ?"
 python sbook.py -d $TMP_DIR/directory_1.txt -d $TMP_DIR/directory_2.txt rob\|rol thierry
 
-echo "The arguments of -g have the same meaning of the script arguments."
-python sbook.py -d $TMP_DIR/directory_1.txt -d $TMP_DIR/directory_2.txt -g rob\|rol -g thierry
-
 echo "Which contain (rob OR rol) but NOT thierry ?"
-python sbook.py -d $TMP_DIR/directory_1.txt -d $TMP_DIR/directory_2.txt -g rob\|rol -v thierry
+python sbook.py -d $TMP_DIR/directory_1.txt -d $TMP_DIR/directory_2.txt rob\|rol -v thierry
 
 echo "Add the data file name to know where data come from."
-python sbook.py -d $TMP_DIR/directory_1.txt -d $TMP_DIR/directory_2.txt -g rob\|rol -v thierry -a
+python sbook.py -d $TMP_DIR/directory_1.txt -d $TMP_DIR/directory_2.txt rob\|rol -v thierry -a
 
 echo "end of check_sbook.sh"
 
