@@ -35,7 +35,7 @@ sb_parser.add_argument('-a', '--append_filename', action='store_true', dest='sw_
 sb_args = sb_parser.parse_args()
 
 if sb_args.sw_directory is None:
-  print "ERR010: no path to the input file directory is defined!"
+  print("ERR010: no path to the input file directory is defined!")
   sb_parser.print_help()
   sys.exit(2)
 
@@ -45,7 +45,7 @@ key_word_unselect = []
 if not sb_args.sw_grep_v is None:
   key_word_unselect.extend(sb_args.sw_grep_v)
 if len(key_word_select)<1:
-  print "ERR011: no key word has been defined!"
+  print("ERR011: no key word has been defined!")
   sb_parser.print_help()
   sys.exit(2)
 #print "dbg720: key_word_select:", key_word_select
